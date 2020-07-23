@@ -24,11 +24,11 @@
 
 ##### 二、模型代码
 
-###### 1.代码结构
+###### 1.目录结构
 
 ![代码结构](https://tva1.sinaimg.cn/large/007S8ZIlgy1gh036iycasj308706v0t8.jpg)
 
-images目录中存放待识别的图片，results目录中存放识别结果，trained_models中是预训练好的模型。utils目录下的dataset.py文件用于读取数据集和标签，inference.py文件用于人脸检测和图片加框加字，preprocessor.py文件用于数据预处理。image_emotion.py文件就是用来识别表情的文件。
+images目录中存放待识别的图片(所有图片都从互联网上下载)，results目录中存放识别结果，trained_models中是预训练好的模型。utils目录下的dataset.py文件用于读取数据集和标签，inference.py文件用于人脸检测和图片加框加字，preprocessor.py文件用于数据预处理。image_emotion.py文件就是用来识别表情的文件。
 
 ###### 2.环境需求
 
