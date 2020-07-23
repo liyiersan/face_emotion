@@ -60,7 +60,7 @@ for face_coordinates in faces:
     draw_bounding_box(face_coordinates, rgb_image, color)
     draw_text(face_coordinates, rgb_image, emotion_text, color, 0, -15, 2, 2)
 
+bgr_image = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2BGR)
 end = time.process_time()
 print('total time: ', end-start)
-bgr_image = cv2.cvtColor(rgb_image, cv2.COLOR_RGB2BGR)
 cv2.imwrite('../results/predicted_' + image_name, bgr_image)
